@@ -1,0 +1,36 @@
+The diff command shows only changes in the code
+With the -u flag, it formats the code and includes context
+(the lines around it)
+
+This narrows the listing down to only the latest changes-
+If your bug just started, it's very likely you'll see it there.
+
+Having easy access to all previous versions of a file allows a dev to revert back to the latest working version quickly and easily.  It also helps narrow down bugs (see above) and allows multiple devs to work on the same project through sharing files.
+
+pros and cons of manually choosing when to create a commit?
+-major con: if you forget to save or have computer failure before commiting, you might lose some work.
+-but it's mostly pros: your commits make more sense (you probably won't be in the middle of a line of code when a commit happens), 
+your log will be easier to follow, 
+reverts to previous versions will make more sense.
+
+why do some vcs (like git) allow saving multiple files in one commit?
+-if you're working on a large, or multi-file project,
+you might edit multiple files in the course of a session.
+Allowing multiple files in one commit helps group them more easily.
+
+how can you use the commands "git log" and "git diff" to view file history?
+-log allows you to find the basic info on commits- once you find the change you're looking for, diff it with the previous commit id and you can see all the changes (the --stat flag helps as well)
+
+
+how does vcs improve confidence to make possibly breaking changes?
+-by giving a dev the knowledge that any bugs can be tracked down to a specific commit and the code base can be reverted to that point easily.
+
+purpose of using git?
+-personal projects for now: sharing code between laptop/desktop and allowing for quick reverts if problems arise.  future: integrating some kind of git based source code for prod: master branch would be the prod code, other branches are for dev/experimenting.
+
+
+
+
+
+
+

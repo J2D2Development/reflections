@@ -1,0 +1,5 @@
+what happens when you init a repo?  why is it necessary?
+-Initializing a repository does the initial git config.  It adds the "hidden" .git folder containing the logic/commands for working with git and versions.  without this, it's just another normal folder.
+
+staging area: how different from working directory and repo?  value?
+-The staging area is an intermediary- it allows you to keep track of what files you're adding to a commit group without actually commiting them yet.  It makes it easier to group commits logically.
