@@ -3,3 +3,22 @@ what happens when you init a repo?  why is it necessary?
 
 staging area: how different from working directory and repo?  value?
 -The staging area is an intermediary- it allows you to keep track of what files you're adding to a commit group without actually commiting them yet.  It makes it easier to group commits logically.
+
+how to use the staging area to make sure you have one commit per logical change?
+-when finished editing a file, add it to the staging area.  after, check the status.  If the nextfile you edit belongs in the same commit, add it as well.  if not, commit the staging area and start a new commit with your new file.
+
+situations when branches would be helpful in keeping history organized?
+-braches give names to commit histories, so that makes them easier to grab/track.  Also allow development of new or experimental features in a 'sandbox'- work and fixes can continue on main branch while you're working on a different branch, then merge together when new feature is ready (will have to resolve conflicts)
+
+how do the diagrams help visualize branch structure?
+-It's easier to think of them as "paths"- branching off from master generally, with the possibility of a detached head state if you check out an old commit without creating a branch for it.
+
+result of merging two branches together?  why do we represent them in the diagram the way we do?
+-a merge combines the code from the two branches into one branch, also combines the history (ordered by commit date).  in the diagram, both paths are kept, but the head gets combined into one to represent the fact that the merged branch isn't deleted- just the reference to it is (each commit from the old branch is now available in the merged or master branch).
+
+pros and cons of git's automatic merging vs manual merging?
+-Main: you don't have to scan an entire file to find conflicts- git will mark the old, and any new changes from each file being merged.
+
+
+
+
