@@ -1,0 +1,2 @@
+when would you want to use a remove repo rather than keeping all work local?
+-sharing with other team members, making your code open source and available to others, I often use it to share code between computers.
