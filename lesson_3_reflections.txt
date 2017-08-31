@@ -1,2 +1,9 @@
-when would you want to use a remove repo rather than keeping all work local?
+when would you want to use a remote repo rather than keeping all work local?
 -sharing with other team members, making your code open source and available to others, I often use it to share code between computers.
+
+describe the differences between forks, clones, and branches.  when would you use one instead of another?
+-A fork is GitHub specific- it allows you to create a remote copy of a repository- essentially cloning it to your own GitHub account. This would be useful to modify/explore repos that belong to other people without actually disturbing their own work (you don't have permission to edit their repo, but you can work with a fork).
+
+A clone is the act of copying a repo to your own local git system.  If you've forked a repo or created one remotely, you'll likely want to clone to your local system to make updates/changes so you can do so in your own dev environment.
+
+A branch is the act of splitting a repo into a new version (for new features, different fixes, etc)- this is useful for making changes while others continue to update the existing code base- a branch can later be merged back into master.
