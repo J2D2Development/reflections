@@ -7,3 +7,6 @@ describe the differences between forks, clones, and branches.  when would you us
 A clone is the act of copying a repo to your own local git system.  If you've forked a repo or created one remotely, you'll likely want to clone to your local system to make updates/changes so you can do so in your own dev environment.
 
 A branch is the act of splitting a repo into a new version (for new features, different fixes, etc)- this is useful for making changes while others continue to update the existing code base- a branch can later be merged back into master.
+
+what is the benefit of having a copy of the last known state of the remote stored locally?
+-It creates a quick way to compare your latest local with the remote- and allows you to pull from the remote to a "sandboxed" local master (without actually updating your latest version so you can review and merge as needed).
