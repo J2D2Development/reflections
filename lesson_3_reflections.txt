@@ -10,3 +10,6 @@ A branch is the act of splitting a repo into a new version (for new features, di
 
 what is the benefit of having a copy of the last known state of the remote stored locally?
 -It creates a quick way to compare your latest local with the remote- and allows you to pull from the remote to a "sandboxed" local master (without actually updating your latest version so you can review and merge as needed).
+
+how would you collaborate without using Git of GitHub?  What would be easier and what would be harder?
+-there are other distributed code sharing systems (like SVN), but some other options might be dropbox or a shared drive.  You could even just email versioned documents back and forth.  Depending on what you choose, you might lose the history git/github provide, allowing for easy code rollbacks, or the pull request/review and branching option.
